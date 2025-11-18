@@ -1,0 +1,38 @@
+name: ldo_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Core Python ---
+  - python=3.10
+  - pip
+
+  # --- Data Science & Math ---
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+
+  # --- Computer Vision ---
+  - opencv
+  - pillow
+
+  # --- Deep Learning (PyTorch with CUDA support) ---
+  # Adjust pytorch-cuda version (11.8 or 12.1) based on your GPU drivers
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+
+  # --- Jupyter & Utilities ---
+  - jupyter
+  - notebook
+  - tqdm  # Great for progress bars in training loops
+
+  # --- Pip-only Packages ---
+  - pip:
+      - torchcam
+      - torch-summary  # Optional: useful for debugging model architecture

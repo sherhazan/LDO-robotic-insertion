@@ -1,0 +1,18 @@
+# # Ignore Data
+# data/
+# *.jpg
+# *.png
+# *.npy
+# *.csv
+
+# Ignore Models results
+results/
+*.pth
+*.pt
+
+# Environments
+.env
+.venv
+env/
+venv/
+ldo_env/
